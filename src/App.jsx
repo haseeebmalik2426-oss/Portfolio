@@ -138,7 +138,7 @@ function Hero() {
             transition={{ duration: 0.8, delay: 0.2 }}
           >
             <img
-              src="/muhammad-haseeb-profile.png"
+              src={`${import.meta.env.BASE_URL}muhammad-haseeb-profile.png`}
               alt="Muhammad Haseeb"
               className="hero-profile-image"
             />
