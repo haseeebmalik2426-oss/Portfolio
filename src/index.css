@@ -241,3 +241,10 @@ body {
   .hero-profile-icon { flex: 0 0 120px; width: 120px; height: 120px; border-width: 3px; transform: translateY(-18px); }
   #hero { min-height: 760px !important; height: auto !important; padding: 110px 0 90px; }
 }
+
+@media (max-width: 640px) {
+  .qualification-row {
+    grid-template-columns: 1fr !important;
+    gap: 0.5rem !important;
+  }
+}

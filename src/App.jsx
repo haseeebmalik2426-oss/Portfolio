@@ -20,9 +20,9 @@ function Nav() {
 
   const links = [
     { label: 'About', href: '#about' },
-    { label: 'Expertise', href: '#expertise' },
+    { label: 'Experience', href: '#experience' },
     { label: 'Education', href: '#education' },
-    { label: 'Interests', href: '#interests' },
+    { label: 'Skills & Languages', href: '#skills-languages' },
   ];
 
   return (
@@ -99,7 +99,7 @@ function Hero() {
             transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
             style={{ fontFamily: "'Cormorant Garamond', serif", fontStyle: 'italic', fontSize: '1.15rem', color: '#c9a84c', letterSpacing: '0.14em', marginBottom: '1.2rem' }}
           >
-            Lecturer of Computer Science
+            IT Teacher & Computer Science Educator
           </motion.p>
 
           <motion.h1
@@ -118,7 +118,7 @@ function Hero() {
             transition={{ duration: 0.8, delay: 0.3 }}
             style={{ fontSize: '1.05rem', color: '#b0b0b0', maxWidth: 520, lineHeight: 1.75, marginBottom: '2.5rem' }}
           >
-            Teaching excellence meets digital craft. Based at Punjab College Shujabad with a Master's from IUB in Computer Science.
+            IT teacher with experience at Zavia Science College, The Professors College, and Punjab Group of Colleges. I hold a BS in Computer Science (Hons) and a B.Ed.
           </motion.div>
 
           <motion.div
@@ -178,20 +178,20 @@ function About() {
             transition={{ duration: 0.9, delay: 0.1, ease: [0.22, 1, 0.36, 1] }}
           >
             <div className="section-label">About Me</div>
-            <h2 className="section-title">Educator, Developer,<br />Lifelong Learner</h2>
+            <h2 className="section-title">IT Educator,<br />Computer Science Graduate</h2>
             <div className="divider-gold" style={{ marginBottom: '1.75rem' }} />
 
             <p style={{ color: '#b8b8b8', fontSize: '1.05rem', lineHeight: 1.85, marginBottom: '1.4rem' }}>
-              I serve as a <strong style={{ color: '#f0efe8', fontWeight: 500 }}>Lecturer of Computer Science</strong> at <strong style={{ color: '#f0efe8', fontWeight: 500 }}>Punjab College Shujabad</strong>, where I combine rigorous academic instruction with hands-on digital practice.
+              I am an experienced <strong style={{ color: '#f0efe8', fontWeight: 500 }}>IT Teacher</strong>, currently teaching at <strong style={{ color: '#f0efe8', fontWeight: 500 }}>Punjab Group of Colleges, Shujabad Campus</strong>. I began my teaching career in 2015 and have also worked at Zavia Science College and The Professors College.
             </p>
             <p style={{ color: '#b8b8b8', fontSize: '1.05rem', lineHeight: 1.85, marginBottom: '2rem' }}>
-              Beyond the classroom, I'm deeply engaged in <strong style={{ color: '#f0efe8', fontWeight: 500 }}>web development</strong> and <strong style={{ color: '#f0efe8', fontWeight: 500 }}>Python programming</strong>, constantly exploring how technology can enhance education and everyday life.
+              I earned a <strong style={{ color: '#f0efe8', fontWeight: 500 }}>BS in Computer Science (Hons)</strong> from The Islamia University of Bahawalpur and a <strong style={{ color: '#f0efe8', fontWeight: 500 }}>B.Ed.</strong> from Allama Iqbal Open University. I am seeking opportunities to apply my education and teaching experience, continue growing professionally, and contribute to the success of my organization. My technical interests include image processing, artificial intelligence, programming, and networking.
             </p>
 
             <div style={{ display: 'flex', gap: '2rem', flexWrap: 'wrap', marginTop: '2rem' }}>
               {[
-                { label: 'Education', value: 'Masters — IUB CS' },
-                { label: 'Position', value: 'Lecturer' },
+                { label: 'Education', value: 'BS Computer Science' },
+                { label: 'Position', value: 'IT Teacher' },
                 { label: 'Location', value: 'Shujabad, Punjab' },
               ].map((item) => (
                 <div key={item.label} style={{ minWidth: 140 }}>
@@ -212,9 +212,9 @@ function About() {
 /* ------------------------------------------------------------------ */
 function Expertise() {
   const skills = [
-    { icon: School, title: 'Teaching', desc: 'Delivering structured, engaging computer science lectures at college level.', color: '#c9a84c' },
-    { icon: Code2, title: 'Web Development', desc: 'Building responsive, modern interfaces with clean code and professional design.', color: '#d4ba6e' },
-    { icon: Server, title: 'Python Programming', desc: 'Writing efficient Python for automation, data tasks, and backend logic.', color: '#e8c97a' },
+    { icon: School, title: 'IT Teaching', desc: 'Teaching information technology and computer science at college level since 2015.', color: '#c9a84c' },
+    { icon: Code2, title: 'Programming', desc: 'Working with C#, C++, Visual Basic, HTML, and object-oriented programming.', color: '#d4ba6e' },
+    { icon: BrainCircuit, title: 'Computing', desc: 'Academic and project experience in image processing, artificial intelligence, and CCNA networking.', color: '#e8c97a' },
   ];
 
   return (
@@ -256,70 +256,28 @@ function Expertise() {
 /*  EDUCATION                                                         */
 /* ------------------------------------------------------------------ */
 function Education() {
+  const qualifications = [
+    { name: 'B.Ed.', institution: 'Allama Iqbal Open University', year: '2019', result: '67%' },
+    { name: 'BS Computer Science (Hons)', institution: 'The Islamia University of Bahawalpur', year: '2015', result: '70% · 2.86 CGPA' },
+    { name: 'Diploma of Associate Engineering — Electrical', institution: 'PBTE Lahore', year: '2011', result: '72%' },
+    { name: 'Matriculation', institution: 'Multan Board', year: '2008', result: '84%' },
+  ];
   return (
     <section id="education" style={{ position: 'relative', zIndex: 2, background: 'var(--navy-deep)' }}>
       <div className="bg-texture" />
-      <div style={{ maxWidth: 1200, margin: '0 auto', padding: '120px 2rem', position: 'relative', zIndex: 2 }}>
-        <div style={{ maxWidth: 640, marginBottom: '4rem' }}>
+      <div style={{ maxWidth: 1000, margin: '0 auto', padding: '120px 2rem', position: 'relative', zIndex: 2 }}>
+        <div style={{ maxWidth: 640, marginBottom: '3rem' }}>
           <div className="section-label">Education</div>
-          <h2 className="section-title">Academic Foundation</h2>
+          <h2 className="section-title">Qualifications</h2>
           <div className="divider-gold" style={{ marginBottom: '1.5rem' }} />
         </div>
-
-        <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '2rem' }}>
-          <motion.div
-            initial={{ opacity: 0, x: -30 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true, margin: '-40px' }}
-            transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
-            className="glass-card"
-            style={{ padding: '2.5rem', position: 'relative', overflow: 'hidden' }}
-          >
-            <div style={{ position: 'absolute', top: 0, right: 0, width: 160, height: 160, background: 'radial-gradient(circle at 100% 0%, rgba(201,168,76,0.07) 0%, transparent 70%)' }} />
-            <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', marginBottom: '1.25rem' }}>
-              <div style={{ width: 48, height: 48, borderRadius: 12, background: 'rgba(201,168,76,0.08)', display: 'flex', alignItems: 'center', justifyContent: 'center', border: '1px solid rgba(201,168,76,0.15)' }}>
-                <GraduationCap size={24} color="#c9a84c" strokeWidth={1.5} />
-              </div>
-              <div>
-                <h3 style={{ fontFamily: "'Cormorant Garamond', serif", fontWeight: 400, fontSize: '1.4rem', color: '#f0efe8' }}>Masters Degree</h3>
-                <p style={{ fontSize: '0.8rem', color: '#5a6578', letterSpacing: '0.06em', textTransform: 'uppercase' }}>Computer Science</p>
-              </div>
-            </div>
-            <p style={{ color: '#b8b8b8', fontSize: '1rem', lineHeight: 1.7 }}>
-              Completed my <strong style={{ color: '#f0efe8', fontWeight: 500 }}>Master's in Computer Science</strong> from <strong style={{ color: '#c9a84c', fontWeight: 500 }}>IUB (Islamia University of Bahawalpur)</strong>, building deep expertise in algorithms, software engineering, and systems design.
-            </p>
-            <div style={{ marginTop: '1.5rem', paddingTop: '1.2rem', borderTop: '1px solid rgba(255,255,255,0.05)', display: 'flex', gap: '2rem' }}>
-              <div><div style={{ fontSize: '0.7rem', letterSpacing: '0.08em', textTransform: 'uppercase', color: '#5a6578' }}>Institution</div><div style={{ color: '#f0efe8', fontWeight: 400 }}>IUB</div></div>
-              <div><div style={{ fontSize: '0.7rem', letterSpacing: '0.08em', textTransform: 'uppercase', color: '#5a6578' }}>Program</div><div style={{ color: '#f0efe8', fontWeight: 400 }}>Computer Science</div></div>
-            </div>
-          </motion.div>
-
-          <motion.div
-            initial={{ opacity: 0, x: 30 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true, margin: '-40px' }}
-            transition={{ duration: 0.8, delay: 0.1, ease: [0.22, 1, 0.36, 1] }}
-            className="glass-card"
-            style={{ padding: '2.5rem', position: 'relative', overflow: 'hidden' }}
-          >
-            <div style={{ position: 'absolute', top: 0, right: 0, width: 160, height: 160, background: 'radial-gradient(circle at 100% 0%, rgba(201,168,76,0.07) 0%, transparent 70%)' }} />
-            <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', marginBottom: '1.25rem' }}>
-              <div style={{ width: 48, height: 48, borderRadius: 12, background: 'rgba(201,168,76,0.08)', display: 'flex', alignItems: 'center', justifyContent: 'center', border: '1px solid rgba(201,168,76,0.15)' }}>
-                <BookOpen size={24} color="#c9a84c" strokeWidth={1.5} />
-              </div>
-              <div>
-                <h3 style={{ fontFamily: "'Cormorant Garamond', serif", fontWeight: 400, fontSize: '1.4rem', color: '#f0efe8' }}>Teaching Focus</h3>
-                <p style={{ fontSize: '0.8rem', color: '#5a6578', letterSpacing: '0.06em', textTransform: 'uppercase' }}>Computer Science</p>
-              </div>
-            </div>
-            <p style={{ color: '#b8b8b8', fontSize: '1rem', lineHeight: 1.7 }}>
-              At <strong style={{ color: '#f0efe8', fontWeight: 500 }}>Punjab College Shujabad</strong>, I teach core computer science subjects, guiding students through programming fundamentals, data structures, and the emerging landscape of technology.
-            </p>
-            <div style={{ marginTop: '1.5rem', paddingTop: '1.2rem', borderTop: '1px solid rgba(255,255,255,0.05)', display: 'flex', gap: '2rem' }}>
-              <div><div style={{ fontSize: '0.7rem', letterSpacing: '0.08em', textTransform: 'uppercase', color: '#5a6578' }}>Institution</div><div style={{ color: '#f0efe8', fontWeight: 400 }}>Punjab College</div></div>
-              <div><div style={{ fontSize: '0.7rem', letterSpacing: '0.08em', textTransform: 'uppercase', color: '#5a6578' }}>Location</div><div style={{ color: '#f0efe8', fontWeight: 400 }}>Shujabad</div></div>
-            </div>
-          </motion.div>
+        <div style={{ display: 'grid', gap: '1rem' }}>
+          {qualifications.map((item, index) => (
+            <motion.div key={item.name} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.5, delay: index * 0.08 }} className="glass-card qualification-row" style={{ padding: '1.5rem 2rem', display: 'grid', gridTemplateColumns: 'minmax(0, 1.5fr) minmax(110px, .5fr) minmax(120px, .6fr)', gap: '1rem', alignItems: 'center' }}>
+              <div><h3 style={{ color: '#f0efe8', fontSize: '1.15rem', fontWeight: 500 }}>{item.name}</h3><p style={{ color: '#8a8a8a', marginTop: '.35rem' }}>{item.institution}</p></div>
+              <span style={{ color: '#c9a84c' }}>{item.year}</span><span style={{ color: '#b8b8b8' }}>{item.result}</span>
+            </motion.div>
+          ))}
         </div>
       </div>
     </section>
@@ -329,75 +287,34 @@ function Education() {
 /* ------------------------------------------------------------------ */
 /*  INTERESTS                                                         */
 /* ------------------------------------------------------------------ */
-function Interests() {
-  const interests = [
-    {
-      icon: Trophy,
-      title: 'Cricket',
-      desc: 'A strategic sport that mirrors the patience and precision of good teaching.',
-      color: '#c9a84c',
-    },
-    {
-      icon: MonitorPlay,
-      title: 'Football',
-      desc: 'The beautiful game — teamwork, discipline, and the thrill of competition.',
-      color: '#d4ba6e',
-    },
-    {
-      icon: BrainCircuit,
-      title: 'Movies',
-      desc: 'Storytelling through cinema — from classic narratives to modern cinematography.',
-      color: '#e8c97a',
-    },
-    {
-      icon: Sparkles,
-      title: 'Games',
-      desc: 'Interactive worlds that blend strategy, creativity, and problem-solving.',
-      color: '#c9a84c',
-    },
+function Experience() {
+  const roles = [
+    { institution: 'Punjab Group of Colleges, Shujabad Campus', role: 'IT Teacher', period: 'December 2019 – Present' },
+    { institution: 'The Professors College, Shujabad', role: 'IT Teacher', period: 'April 2016 – November 2019' },
+    { institution: 'Zavia Science College, Zareef Shaheed (Raja Ram)', role: 'IT Teacher', period: 'February 2015 – March 2016' },
   ];
-
   return (
-    <section id="interests" style={{ position: 'relative', zIndex: 2, background: 'var(--navy)' }}>
+    <section id="experience" style={{ position: 'relative', zIndex: 2, background: 'var(--navy)' }}>
       <div className="bg-texture" />
-      <div style={{ maxWidth: 1200, margin: '0 auto', padding: '120px 2rem', position: 'relative', zIndex: 2 }}>
-        <div style={{ maxWidth: 640, marginBottom: '4rem' }}>
-          <div className="section-label">Interests</div>
-          <h2 className="section-title">Beyond the Classroom</h2>
-          <div className="divider-gold" style={{ marginBottom: '1.5rem' }} />
-          <p style={{ color: '#b8b8b8', fontSize: '1.05rem', lineHeight: 1.75, maxWidth: 540 }}>
-            Life outside academia keeps me balanced, inspired, and connected to the world in fresh ways.
-          </p>
+      <div style={{ maxWidth: 1000, margin: '0 auto', padding: '120px 2rem', position: 'relative', zIndex: 2 }}>
+        <div style={{ maxWidth: 640, marginBottom: '3rem' }}><div className="section-label">Career</div><h2 className="section-title">Teaching Experience</h2><div className="divider-gold" /></div>
+        <div style={{ display: 'grid', gap: '1rem' }}>
+          {roles.map((item, index) => <motion.div key={item.institution} initial={{ opacity: 0, x: -20 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ duration: .5, delay: index * .08 }} className="glass-card" style={{ padding: '1.6rem 2rem', display: 'flex', justifyContent: 'space-between', alignItems: 'center', gap: '1.5rem', flexWrap: 'wrap' }}><div><h3 style={{ color: '#f0efe8', fontSize: '1.2rem', fontWeight: 500 }}>{item.institution}</h3><p style={{ color: '#c9a84c', marginTop: '.4rem' }}>{item.role}</p></div><span style={{ color: '#8a8a8a' }}>{item.period}</span></motion.div>)}
         </div>
+      </div>
+    </section>
+  );
+}
 
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))', gap: '1.5rem' }}>
-          {interests.map((item, i) => (
-            <motion.a
-              href="#"
-              key={item.title}
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: '-30px' }}
-              transition={{ duration: 0.7, delay: i * 0.08, ease: [0.22, 1, 0.36, 1] }}
-              style={{ textDecoration: 'none', color: 'inherit' }}
-              onMouseEnter={e => { const el = e.currentTarget.querySelector('.card-inner'); if (el) el.style.transform = 'translateY(-4px)'; }}
-              onMouseLeave={e => { const el = e.currentTarget.querySelector('.card-inner'); if (el) el.style.transform = 'translateY(0)'; }}
-            >
-              <div className="card-inner glass-card" style={{ padding: '2rem', height: '100%', transition: 'transform 0.35s ease' }}>
-                <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', marginBottom: '1.25rem' }}>
-                  <div style={{ width: 52, height: 52, borderRadius: 14, background: 'rgba(201,168,76,0.08)', display: 'flex', alignItems: 'center', justifyContent: 'center', border: '1px solid rgba(201,168,76,0.12)', flexShrink: 0 }}>
-                    <item.icon size={24} color={item.color} strokeWidth={1.5} />
-                  </div>
-                  <h3 style={{ fontFamily: "'Cormorant Garamond', serif", fontWeight: 400, fontSize: '1.35rem', color: '#f0efe8' }}>{item.title}</h3>
-                </div>
-                <p style={{ color: '#8a8a8a', fontSize: '0.95rem', lineHeight: 1.7 }}>{item.desc}</p>
-                <div style={{ marginTop: '1.25rem', display: 'flex', alignItems: 'center', gap: '0.4rem', color: item.color, fontSize: '0.78rem', letterSpacing: '0.06em', textTransform: 'uppercase', fontWeight: 500 }}>
-                  Learn more <ArrowUpRight size={14} />
-                </div>
-              </div>
-            </motion.a>
-          ))}
-        </div>
+function SkillsLanguages() {
+  const skills = ['C#', 'C++', 'HTML', 'Visual Basic', 'Object-oriented programming', 'MS Word', 'MS Excel', 'MS PowerPoint', 'Image processing', 'Artificial intelligence', 'CCNA', 'Internet research'];
+  return (
+    <section id="skills-languages" style={{ position: 'relative', zIndex: 2, background: 'var(--navy-deep)' }}>
+      <div className="bg-texture" />
+      <div style={{ maxWidth: 1000, margin: '0 auto', padding: '120px 2rem', position: 'relative', zIndex: 2 }}>
+        <div style={{ maxWidth: 640, marginBottom: '3rem' }}><div className="section-label">Skills</div><h2 className="section-title">Computing & Languages</h2><div className="divider-gold" /></div>
+        <div className="glass-card" style={{ padding: '2rem', marginBottom: '1.5rem' }}><h3 style={{ color: '#f0efe8', fontSize: '1.2rem', marginBottom: '1.25rem' }}>Computer Skills & Other Qualifications</h3><div style={{ display: 'flex', flexWrap: 'wrap', gap: '.7rem' }}>{skills.map(skill => <span key={skill} style={{ border: '1px solid rgba(201,168,76,.25)', borderRadius: 999, padding: '.55rem .9rem', color: '#d3d0c5', fontSize: '.9rem' }}>{skill}</span>)}</div><p style={{ color: '#8a8a8a', marginTop: '1.25rem', lineHeight: 1.7 }}><strong style={{ color: '#c9a84c' }}>Final year project:</strong> Image processing using C# in Visual Studio.</p></div>
+        <div className="glass-card" style={{ padding: '2rem' }}><h3 style={{ color: '#f0efe8', fontSize: '1.2rem', marginBottom: '1rem' }}>Languages</h3><p style={{ color: '#b8b8b8' }}>English · Urdu · Punjabi</p></div>
       </div>
     </section>
   );
@@ -423,14 +340,14 @@ function Footer() {
           <div className="glass-card" style={{ padding: '2.5rem' }}>
             <h3 style={{ fontFamily: "'Cormorant Garamond', serif", fontWeight: 400, fontSize: '1.3rem', color: '#f0efe8', marginBottom: '1.25rem' }}>Get in Touch</h3>
             <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
-              <a href="#" style={{ display: 'flex', alignItems: 'center', gap: '0.85rem', color: '#b8b8b8', textDecoration: 'none', transition: 'color 0.3s', fontSize: '0.95rem' }} onMouseEnter={e => e.currentTarget.style.color = '#c9a84c'} onMouseLeave={e => e.currentTarget.style.color = '#b8b8b8'}>
-                <Mail size={18} color="#c9a84c" strokeWidth={1.5} /> muhammad.haseeb@email.com
+              <a href="mailto:haseebhassan230@gmail.com" style={{ display: 'flex', alignItems: 'center', gap: '0.85rem', color: '#b8b8b8', textDecoration: 'none', transition: 'color 0.3s', fontSize: '0.95rem' }} onMouseEnter={e => e.currentTarget.style.color = '#c9a84c'} onMouseLeave={e => e.currentTarget.style.color = '#b8b8b8'}>
+                <Mail size={18} color="#c9a84c" strokeWidth={1.5} /> haseebhassan230@gmail.com
+              </a>
+              <a href="tel:+923022624293" style={{ display: 'flex', alignItems: 'center', gap: '0.85rem', color: '#b8b8b8', textDecoration: 'none', transition: 'color 0.3s', fontSize: '0.95rem' }} onMouseEnter={e => e.currentTarget.style.color = '#c9a84c'} onMouseLeave={e => e.currentTarget.style.color = '#b8b8b8'}>
+                <Phone size={18} color="#c9a84c" strokeWidth={1.5} /> +92 302 2624293
               </a>
               <a href="#" style={{ display: 'flex', alignItems: 'center', gap: '0.85rem', color: '#b8b8b8', textDecoration: 'none', transition: 'color 0.3s', fontSize: '0.95rem' }} onMouseEnter={e => e.currentTarget.style.color = '#c9a84c'} onMouseLeave={e => e.currentTarget.style.color = '#b8b8b8'}>
-                <Phone size={18} color="#c9a84c" strokeWidth={1.5} /> +92 300 123 4567
-              </a>
-              <a href="#" style={{ display: 'flex', alignItems: 'center', gap: '0.85rem', color: '#b8b8b8', textDecoration: 'none', transition: 'color 0.3s', fontSize: '0.95rem' }} onMouseEnter={e => e.currentTarget.style.color = '#c9a84c'} onMouseLeave={e => e.currentTarget.style.color = '#b8b8b8'}>
-                <MapPin size={18} color="#c9a84c" strokeWidth={1.5} /> Punjab College, Shujabad
+                <MapPin size={18} color="#c9a84c" strokeWidth={1.5} /> Raja Ram, Shujabad · Multan, Punjab, Pakistan
               </a>
             </div>
           </div>
@@ -461,7 +378,8 @@ export default function App() {
       <About />
       <Expertise />
       <Education />
-      <Interests />
+      <Experience />
+      <SkillsLanguages />
       <Footer />
     </>
   );
