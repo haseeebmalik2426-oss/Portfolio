@@ -213,7 +213,7 @@ function About() {
 function Expertise() {
   const skills = [
     { icon: School, title: 'IT Teaching', desc: 'Teaching information technology and computer science at college level since 2015.', color: '#c9a84c' },
-    { icon: Code2, title: 'Programming', desc: 'Working with C#, C++, Visual Basic, HTML, and object-oriented programming.', color: '#d4ba6e' },
+    { icon: Code2, title: 'Programming', desc: 'Working with Python, C#, C++, Visual Basic, HTML, and object-oriented programming.', color: '#d4ba6e' },
     { icon: BrainCircuit, title: 'Computing', desc: 'Academic and project experience in image processing, artificial intelligence, and CCNA networking.', color: '#e8c97a' },
   ];
 
@@ -307,7 +307,7 @@ function Experience() {
 }
 
 function SkillsLanguages() {
-  const skills = ['C#', 'C++', 'HTML', 'Visual Basic', 'Object-oriented programming', 'MS Word', 'MS Excel', 'MS PowerPoint', 'Image processing', 'Artificial intelligence', 'CCNA', 'Internet research'];
+  const skills = ['Python', 'C#', 'C++', 'HTML', 'Visual Basic', 'Object-oriented programming', 'MS Word', 'MS Excel', 'MS PowerPoint', 'Image processing', 'Artificial intelligence', 'CCNA', 'Internet research'];
   return (
     <section id="skills-languages" style={{ position: 'relative', zIndex: 2, background: 'var(--navy-deep)' }}>
       <div className="bg-texture" />
@@ -340,8 +340,8 @@ function Footer() {
           <div className="glass-card" style={{ padding: '2.5rem' }}>
             <h3 style={{ fontFamily: "'Cormorant Garamond', serif", fontWeight: 400, fontSize: '1.3rem', color: '#f0efe8', marginBottom: '1.25rem' }}>Get in Touch</h3>
             <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
-              <a href="mailto:haseebhassan230@gmail.com" style={{ display: 'flex', alignItems: 'center', gap: '0.85rem', color: '#b8b8b8', textDecoration: 'none', transition: 'color 0.3s', fontSize: '0.95rem' }} onMouseEnter={e => e.currentTarget.style.color = '#c9a84c'} onMouseLeave={e => e.currentTarget.style.color = '#b8b8b8'}>
-                <Mail size={18} color="#c9a84c" strokeWidth={1.5} /> haseebhassan230@gmail.com
+              <a href="mailto:haseebhassan280@gmail.com" style={{ display: 'flex', alignItems: 'center', gap: '0.85rem', color: '#b8b8b8', textDecoration: 'none', transition: 'color 0.3s', fontSize: '0.95rem' }} onMouseEnter={e => e.currentTarget.style.color = '#c9a84c'} onMouseLeave={e => e.currentTarget.style.color = '#b8b8b8'}>
+                <Mail size={18} color="#c9a84c" strokeWidth={1.5} /> haseebhassan280@gmail.com
               </a>
               <a href="tel:+923022624293" style={{ display: 'flex', alignItems: 'center', gap: '0.85rem', color: '#b8b8b8', textDecoration: 'none', transition: 'color 0.3s', fontSize: '0.95rem' }} onMouseEnter={e => e.currentTarget.style.color = '#c9a84c'} onMouseLeave={e => e.currentTarget.style.color = '#b8b8b8'}>
                 <Phone size={18} color="#c9a84c" strokeWidth={1.5} /> +92 302 2624293
